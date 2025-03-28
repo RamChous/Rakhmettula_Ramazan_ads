@@ -18,11 +18,13 @@ public class Main1 {
     }
 
     public static int problem1(int n, int[] nums) {
-        if (n == 1) {
+        if (n == 1)
             return nums[0];
+        int min = problem1(n - 1, nums);
+        if (nums[n - 1] < min) {
+            return nums[n - 1];
         } else {
-            int min = problem1(n - 1, nums);
-            return nums[n - 1] < min ? nums[n - 1] : min;
+            return min;
         }
     }
 }
