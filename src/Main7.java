@@ -4,17 +4,17 @@ public class Main7 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         String str = scn.nextLine();
-        problem7(str, "");
+        permutations(str, "");
         scn.close();
     }
-    public static void problem7(String str, String result) {
+    public static void permutations(String str, String result) {
         if (str.isEmpty()) {
             System.out.println(result);
         }
         for(int i = 0; i < str.length(); ++i) {
             char ch = str.charAt(i);
             String remain = str.substring(0, i) + str.substring(i + 1);
-            problem7(remain, result + ch);
+            permutations(remain, result + ch);
         }
     }
 }
