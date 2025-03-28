@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
 public class Main3 {
-    public Main3() {
-    }
-
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -12,17 +9,15 @@ public class Main3 {
         } else {
             System.out.println("Composite");
         }
-
         scn.close();
     }
-
     public static boolean problem3(int n, int d) {
-        if (n <= 1) {
+        if (n <= 1)
             return false;
-        } else if (d == 1) {
+        if (d == 1)
             return true;
-        } else {
-            return n % d == 0 ? false : problem3(n, d - 1);
-        }
+        if (n % d == 0)
+            return false;
+        return problem3(n, d - 1);
     }
 }
