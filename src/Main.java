@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-
+    // Complexity: linear - O(N)
     public static void problem1() {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -22,7 +22,7 @@ public class Main {
         }
     }
 
-
+    // Complexity: linear - O(N)
     public static void problem2() {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -39,7 +39,7 @@ public class Main {
         return nums[n - 1] + sum(n - 1, nums);
     }
 
-
+    // Complexity: linear - O(N)
     public static void problem3() {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -60,7 +60,7 @@ public class Main {
         return PrimeOrComp(n, d - 1);
     }
 
-
+    // Complexity: linear - O(N)
     public static void problem4() {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -73,7 +73,7 @@ public class Main {
         return factorial(n - 1) * n;
     }
 
-
+    // Complexity: exponential - O(2^N)
     public static void problem5() {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -86,7 +86,7 @@ public class Main {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-
+    // Complexity: linear - O(N)
     public static void problem6() {
         Scanner scn = new Scanner(System.in);
         int a = scn.nextInt();
@@ -100,7 +100,7 @@ public class Main {
         return power(a, n - 1) * a;
     }
 
-
+    // Complexity: factorial - O(N!)
     public static void problem7() {
         Scanner scn = new Scanner(System.in);
         String str = scn.nextLine();
@@ -118,7 +118,7 @@ public class Main {
         }
     }
 
-
+    // Complexity: linear - O(N)
     public static void problem8() {
         Scanner scn = new Scanner(System.in);
         String s = scn.nextLine();
@@ -139,7 +139,7 @@ public class Main {
         return AllDigits(s, i + 1);
     }
 
-
+    // Complexity: exponential - O(2^N)
     public static void problem9() {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -153,7 +153,7 @@ public class Main {
         return BinomialCoeff(n - 1, k - 1) + BinomialCoeff(n - 1, k);
     }
 
-
+    // Complexity: logarithmic - O(log min(a, b))
     public static void problem10() {
         Scanner scn = new Scanner(System.in);
         int a = scn.nextInt();
